@@ -1,0 +1,34 @@
+# CODTECH Internship - Speech-to-Text System
+# Author: Sudheer
+# Date: 2025-08-14
+
+# Install dependencies:
+# pip install SpeechRecognition pyaudio
+
+import speech_recognition as sr
+
+def speech_to_text(audio_file):
+    """
+    Convert speech in an audio file to text.
+    :param audio_file: Path to the audio file (WAV, AIFF, FLAC).
+    :return: Transcribed text or error message.
+    """
+    recognizer = sr.Recognizer()
+    try:
+        with sr.AudioFile(audio_file) as source:
+            print("Listening to audio...")
+            audio_data = recognizer.record(source)
+            print("Transcribing...")
+            text = recognizer.recognize_google(audio_data)
+            return text
+    except sr.UnknownValueError:
+        return "Speech Recognition could not understand the audio."
+    except sr.RequestError as e:
+        return f"Could not request results from the service; {e}"
+
+# Example usage
+if __name__ == "__main__":
+    audio_path = "sample_audio.wav"  # Replace with your audio file
+    result = speech_to_text(audio_path)
+    print("\n=== Transcription Result ===")
+    print(result)
