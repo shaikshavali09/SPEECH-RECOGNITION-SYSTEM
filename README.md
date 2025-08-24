@@ -24,6 +24,8 @@ The workflow of the system involves several key steps. First, the audio is captu
 
 One of the significant advantages of this system is its wide range of applications. It can be used for transcribing lectures, creating subtitles for videos, enabling voice-controlled applications, and assisting people with hearing impairments. Businesses can also use it for generating meeting notes or customer support automation. The system demonstrates how AI can bridge the gap between spoken and written communication, making technology more inclusive and interactive.
 
+[task2 output.txt](https://github.com/user-attachments/files/21957210/task2.output.txt)
+
 The project is implemented in Python, and the libraries used ensure ease of development and adaptability. SpeechRecognition provides a beginner-friendly interface for simple applications, while Wav2Vec2.0, available through the Hugging Face Transformers library, allows experimentation with state-of-the-art deep learning techniques. This flexibility makes the system suitable for both academic learning and practical deployment.
 
 In conclusion, the Speech-to-Text Recognition System is a powerful demonstration of how pre-trained models and NLP techniques can transform audio into accurate text. By integrating user-friendly libraries and cutting-edge models, the project successfully showcases a functional transcription tool that highlights the real-world impact of AI. This system not only simplifies human-computer interaction but also opens pathways for accessibility and productivity improvements in multiple domains.
